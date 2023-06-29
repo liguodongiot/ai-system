@@ -14,7 +14,7 @@ dataset_cnn = load_dataset("./cnn_dailymail.py", '3.0.0', cache_dir="/workspace/
 
 
 ```
-# 当前脚本执行目录
+# 当前执行Python脚本的目录
 > ls
 cnn_dailymail.py
 cnn_stories.tgz
