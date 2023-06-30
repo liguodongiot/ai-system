@@ -47,7 +47,7 @@ data_local = load_from_disk('./alpaca')
 ```
 
 
-## yahma/alpaca-cleaned（json）
+## yahma/alpaca-cleaned（json文件）
 
 ```
 from datasets import load_dataset
