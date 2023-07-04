@@ -11,3 +11,12 @@
 - [DCGM](https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/index.html)
 
 
+
+
+
+## LLM
+
+
+### LLM 技术原理
+- [OpenAI联合创始人亲自上场科普GPT，让技术小白也能理解最强AI](https://mp.weixin.qq.com/s/MD4WwwJLXm8rEm-sniX8Gw)
+
