@@ -20,4 +20,5 @@
 
 ### LLM 技术原理
 - [OpenAI联合创始人亲自上场科普GPT，让技术小白也能理解最强AI](https://mp.weixin.qq.com/s/MD4WwwJLXm8rEm-sniX8Gw)
-
+- [详解大模型RLHF过程（配代码解读）](https://zhuanlan.zhihu.com/p/624589622)
+- [ChatGPT 背后的“功臣”——RLHF 技术详解](https://huggingface.co/blog/zh/rlhf)，[Illustrating Reinforcement Learning from Human Feedback (RLHF)](https://huggingface.co/blog/rlhf)
