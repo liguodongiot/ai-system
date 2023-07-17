@@ -69,3 +69,50 @@ print("over")
 ---
 
 
+
+## ought/raft（arrow文件）
+
+```
+git lfs clone https://huggingface.co/datasets/ought/raft
+```
+
+```
+from datasets import load_dataset
+
+dataset_name = "twitter_complaints"
+text_column = "Tweet text"
+label_column = "text_label"
+
+# dataset = load_dataset("ought/raft", dataset_name, cache_dir= "./data")
+dataset = load_dataset("/Users/liguodong/work/data/raft/raft.py", dataset_name, cache_dir= "./data")
+# /Users/liguodong/.cache/huggingface/datasets/ought___raft/twitter_complaints/1.1.0
+```
+
+
+## financial_phrasebank（arrow文件）
+```
+git lfs clone https://huggingface.co/datasets/financial_phrasebank
+```
+
+```
+from datasets import load_dataset
+
+
+text_column = "sentence"
+label_column = "text_label"
+
+# dataset = load_dataset("financial_phrasebank", "sentences_allagree", cache_dir= "./data")
+dataset = load_dataset("/Users/liguodong/work/data/financial_phrasebank/financial_phrasebank.py", "sentences_allagree", cache_dir= "./data")
+
+dataset = dataset["train"].train_test_split(test_size=0.1)
+print("----------")
+```
+
+
+## 
+
+
+
+
+
+
