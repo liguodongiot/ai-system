@@ -109,7 +109,19 @@ print("----------")
 ```
 
 
-## 
+## bookcorpus
+
+
+- https://huggingface.co/datasets/bookcorpus
+
+
+
+
+
+
+
+
+
 
 
 
