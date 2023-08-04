@@ -1,5 +1,17 @@
 
 
+
+## wikitext/wikitext-2-raw-v1
+
+```
+dataset = load_dataset("wikitext", "wikitext-2-raw-v1", cache_dir= "./data")
+train_dataset = dataset["train"]
+train_dataset_100 = train_dataset.select(range(100))
+dataset = dataset["train"].train_test_split(test_size=0.1)
+```
+
+
+
 ## ccdv/cnn_dailymail
 
 ```
