@@ -4,6 +4,9 @@
 
 ## torch.nn.Module
 
+
+- https://blog.csdn.net/aiqiu_gogogo/article/details/78645887
+
 ```
 model.cpu()：将模型复制到CPU上；
 model.cuda()：将模型复制到GPU上；
