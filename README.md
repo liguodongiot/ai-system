@@ -1,8 +1,6 @@
 # AI System
 
 
-
-
 ## MLOps/ModelOps
 
 
@@ -14,6 +12,12 @@
 
 ### 模型运营
 
+
+## LLM
+
+LLM理论及实践: [llm-action](https://github.com/liguodongiot/llm-action)
+
+## LLMOps
 
 
 
