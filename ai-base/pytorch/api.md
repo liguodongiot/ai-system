@@ -41,3 +41,25 @@
 
 
 
+## other
+
+
+
+
+- skip_init 给定一个模块类对象和 args / kwargs，在不初始化参数 / 缓冲区的情况下实例化模块。
+- torch.einsum
+- torch.cat
+- torch.softmax
+- torch.baddbmm:https://blog.csdn.net/qq_41289353/article/details/123644925
+
+- F.silu
+
+
+
+
+
+
+
+
+
+
