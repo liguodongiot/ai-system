@@ -20,6 +20,8 @@ dataset = load_dataset(
 
 
 
+
+
 ## wikitext/wikitext-2-raw-v1
 
 ```
@@ -28,6 +30,31 @@ train_dataset = dataset["train"]
 train_dataset_100 = train_dataset.select(range(100))
 dataset = dataset["train"].train_test_split(test_size=0.1)
 ```
+
+```
+from datasets import load_dataset
+
+
+# raw_datasets = load_dataset("wikitext", "wikitext-2-raw-v1")
+dataset = load_dataset("wikitext", "wikitext-2-raw-v1", cache_dir="./")
+
+
+if "validation" not in dataset.keys():
+    dataset["validation"] = load_dataset(
+        "/Users/liguodong/.cache/huggingface/modules/datasets_modules/datasets/wikitext/a241db52902eaf2c6aa732210bead40c090019a499ceb13bcbfa3f8ab646a126/wikitext.py",
+        "wikitext-2-raw-v1",
+        split=f"train[:5%]",
+        cache_dir="./",
+
+    )
+    dataset["train"] = load_dataset(
+        "/Users/liguodong/.cache/huggingface/modules/datasets_modules/datasets/wikitext/a241db52902eaf2c6aa732210bead40c090019a499ceb13bcbfa3f8ab646a126/wikitext.py",
+        "wikitext-2-raw-v1",
+        split=f"train[5%:]",
+        cache_dir="./",
+    )
+```
+
 
 
 
