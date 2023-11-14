@@ -13,7 +13,7 @@ metric = evaluate.load("/home/guodong/.cache/huggingface/modules/evaluate_module
 
 ## lambada
 
-
+- datasets=2.14.6
 ```
 from datasets import load_dataset
 
