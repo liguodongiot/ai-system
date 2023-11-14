@@ -1,4 +1,15 @@
 
+## glue/mrpc
+
+```
+import evaluate
+from datasets import load_dataset
+
+datasets = load_dataset("/home/guodong/code/foundation_model_survey/tests/glue.py", "mrpc")
+metric = evaluate.load("/home/guodong/.cache/huggingface/modules/evaluate_modules/metrics/evaluate-metric--glue/05234ba7acc44554edcca0978db5fa3bc600eeee66229abe79ff9887eacaf3ed/glue.py", "mrpc")
+```
+
+
 
 ## lambada
 
