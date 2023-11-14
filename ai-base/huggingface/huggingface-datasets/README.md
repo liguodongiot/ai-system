@@ -1,5 +1,24 @@
 
 
+## lambada
+
+
+```
+from datasets import load_dataset
+
+
+# dataset = load_dataset("lambada",
+#                         split="validation",
+#                         cache_dir="/Users/liguodong/work/data/hf/lambada")
+
+
+dataset = load_dataset(
+                       path="/Users/liguodong/work/data/hf/lambada",
+                        split="validation",
+                       )
+```
+
+
 
 ## wikitext/wikitext-2-raw-v1
 
