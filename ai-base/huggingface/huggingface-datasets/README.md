@@ -1,4 +1,16 @@
 
+## ybelkada/football-dataset
+```
+from datasets import load_dataset
+
+
+dataset = load_dataset("ybelkada/football-dataset", split="train")
+
+dataset2 = load_dataset("/Users/liguodong/.cache/huggingface/datasets/ybelkada___football-dataset/default-80f5618dafa96df9/0.0.0/0111277fb19b16f696664cde7f0cb90f833dec72db2cc73cfdf87e697f78fe02", split="train")
+
+```
+
+
 ## glue/mrpc
 
 ```
