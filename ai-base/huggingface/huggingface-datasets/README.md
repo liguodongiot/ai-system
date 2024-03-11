@@ -23,6 +23,75 @@ metric = evaluate.load("/home/guodong/.cache/huggingface/modules/evaluate_module
 
 
 
+## c4
+
+- https://huggingface.co/datasets/c4
+- https://huggingface.co/datasets/allenai/c4/tree/main/en
+
+
+在线加载：
+```
+
+
+import datasets
+from datasets import load_dataset
+
+# en = load_dataset("allenai/c4", "en")
+# data = datasets.load_dataset("c4", "en", split="train", streaming=True)
+data = datasets.load_dataset("/Users/liguodong/.cache/huggingface/modules/datasets_modules/datasets/c4/584d57ebe81c209b6c7f31727066d2c4b4bba37cb7092cdd83083d5ec11207db/c4.py", "en", split="train", streaming=False)
+
+seed_for_shuffle = 42   
+print(f"Shuffling data with seed {seed_for_shuffle}")
+
+data_set: datasets.Dataset = data.shuffle(seed=seed_for_shuffle)
+
+print(data_set)
+
+iter_data = iter(data_set)
+
+for example in iter_data:
+    print(example["text"])
+
+# val_data = datasets.load_dataset("c4", "en", split="validation", streaming=True) #DGX
+val_data = datasets.load_dataset("/Users/liguodong/.cache/huggingface/modules/datasets_modules/datasets/c4/584d57ebe81c209b6c7f31727066d2c4b4bba37cb7092cdd83083d5ec11207db/c4.py", "en", split="validation", streaming=False) #DGX
+
+
+print("----------")
+
+```
+
+本地加载：
+```
+
+import datasets
+from datasets import load_dataset
+
+data = load_dataset("json", data_files="/Users/liguodong/data/c4/c4-train.00000-of-01024.json")
+
+print(data)
+train_data = data["train"]
+
+
+seed_for_shuffle = 42   
+print(f"Shuffling data with seed {seed_for_shuffle}")
+
+data_set: datasets.Dataset = train_data.shuffle(seed=seed_for_shuffle)
+
+print(data_set)
+
+iter_data = iter(data_set)
+
+for example in iter_data:
+    print(example)
+    print("-------------")
+    print(example["text"])
+    break
+
+print("----------")
+
+```
+
+
 ## lambada
 
 - datasets=2.14.6
