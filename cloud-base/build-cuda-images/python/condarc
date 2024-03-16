@@ -1,0 +1,18 @@
+channels:
+  - defaults
+show_channel_urls: true
+default_channels:
+  - http://nexus3.com/repository/conda-bfsu/anaconda/pkgs/main
+  - http://nexus3.com/repository/conda-bfsu/anaconda/pkgs/r
+  - http://nexus3.com/repository/conda-bfsu/anaconda/pkgs/msys2
+custom_channels:
+  conda-forge: http://nexus3.com/repository/conda-bfsu/anaconda/cloud
+  msys2: http://nexus3.com/repository/conda-bfsu/anaconda/cloud
+  bioconda: http://nexus3.com/repository/conda-bfsu/anaconda/cloud
+  menpo: http://nexus3.com/repository/conda-bfsu/anaconda/cloud
+  pytorch: http://nexus3.com/repository/conda-bfsu/anaconda/cloud
+  simpleitk: http://nexus3.com/repository/conda-bfsu/anaconda/cloud
+  Paddle: http://nexus3.com/repository/conda-bfsu/anaconda/cloud
+  rapidsai: http://nexus3.com/repository/conda-bfsu/anaconda/cloud
+  numba: http://nexus3.com/repository/conda-bfsu/anaconda/cloud
+  caffe2: http://nexus3.com/repository/conda-bfsu/anaconda/cloud
