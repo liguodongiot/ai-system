@@ -18,7 +18,7 @@ COPY pip.conf /etc/pip.conf
 # Miniconda3-py310_23.1.0-1-Linux-x86_64.sh  
 
 RUN \
-    curl http://10.99.2.25:81/tools/Miniconda3-${CONDA_VERSION}-Linux-$(uname -i).sh -o /tmp/miniconda.sh && \
+    curl http://10.xx.xx:xx/tools/Miniconda3-${CONDA_VERSION}-Linux-$(uname -i).sh -o /tmp/miniconda.sh && \
     /bin/bash /tmp/miniconda.sh -b -p $CONDA_DIR && \
     rm /tmp/miniconda.sh 
 
