@@ -314,7 +314,7 @@ LLM理论及实践: [llm-action](https://github.com/liguodongiot/llm-action)
 我创建了一个AI工程化学习交流群，供大家一起学习交流AI工程化相关的最新技术（MLOps、ModelOps、LLMOps、AI System等），**可加我微信进群**（加微信请备注来意，如：**进AI工程化交流群+GitHub**）。**一定要备注哟，否则不予通过**。
 
 <p align="center">
-  <img src="./pic/wechat.jpeg" width="25%" height="25%">
+  <img src="./pic/wechat.jpeg" width="20%" height="20%">
 </p>
 
 
