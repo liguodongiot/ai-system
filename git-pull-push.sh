@@ -1,11 +1,12 @@
 git pull origin main
 git add .
 
-time=`date -I minutes`
+#time=`date -Iminutes`
+time=`date +"%Y-%m-%d_%H:%M:%S"`
 
 echo $time
 
-commit_info="fix-""$time"
+commit_info="update-""$time"
 
 git commit -m $commit_info
 
