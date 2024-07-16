@@ -10,6 +10,13 @@
 
 
 
+## Embedding
+
+
+- [nn.Embedding 详解](https://blog.csdn.net/lsb2002/article/details/132993128)
+
+
+
 ---
 
 ## 优化器
@@ -50,7 +57,7 @@
 - torch.einsum
 - torch.cat
 - torch.softmax
-- torch.baddbmm:https://blog.csdn.net/qq_41289353/article/details/123644925
+- torch.baddbmm: https://blog.csdn.net/qq_41289353/article/details/123644925
 
 - F.silu
 
