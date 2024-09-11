@@ -1,5 +1,6 @@
-# AI System
+# AI System（人工智能系统）
 
+本项目为人工智能系统相关技术原理和实战分享。关于大模型相关技术原理以及实战经验分享放置在[llm-action](https://github.com/liguodongiot/llm-action)；另外，收集的大模型相关技术的全网优质资源放置在[llm-resource](https://github.com/liguodongiot/llm-resource)。
 
 
 ## 目录
@@ -306,6 +307,11 @@ LLM理论及实践: [llm-action](https://github.com/liguodongiot/llm-action)
 - [机器学习模型监控]()
 - [机器学习模型可视化]()
 
+
+
+## AI资料
+
+- [AI百宝箱](https://github.com/liguodongiot/ai-system/tree/main/ai-resource)
 
 
 
