@@ -297,6 +297,9 @@ DatasetDict({
 })
 
 
+dataset = load_dataset("parquet", data_files={"train_sft": "/workspace/data/ultrachat_200k/data/train_sft-*.parquet", "train_gen": "/workspace/data/ultrachat_200k/data/train_gen-*.parquet", "test_sft": "/workspace/data/ultrachat_200k/data/test_sft-*.parquet","test_gen":"/workspace/data/ultrachat_200k/data/test_gen-*.parquet"},
+split="test_sft", streaming=True)
+
 # 按目录结构指定，目录下按切分存放对应的 parquet 文件
 dataset = load_dataset("parquet", data_dir="path/to/your/directory")
 ```
