@@ -266,7 +266,40 @@ print("----------")
 
 
 
+## ultrachat_200k(parquet)
 
+
+```
+# 本地加载
+from datasets import load_dataset
+
+
+# 按文件名模式指定多个文件
+dataset = load_dataset("parquet", data_files={"train_sft": "/workspace/data/ultrachat_200k/data/train_sft-*.parquet", "train_gen": "/workspace/data/ultrachat_200k/data/train_gen-*.parquet", "test_sft": "/workspace/data/ultrachat_200k/data/test_sft-*.parquet","test_gen":"/workspace/data/ultrachat_200k/data/test_gen-*.parquet"})
+
+DatasetDict({
+    train_sft: Dataset({
+        features: ['prompt', 'prompt_id', 'messages'],
+        num_rows: 207865
+    })
+    train_gen: Dataset({
+        features: ['prompt', 'prompt_id', 'messages'],
+        num_rows: 256032
+    })
+    test_sft: Dataset({
+        features: ['prompt', 'prompt_id', 'messages'],
+        num_rows: 23110
+    })
+    test_gen: Dataset({
+        features: ['prompt', 'prompt_id', 'messages'],
+        num_rows: 28304
+    })
+})
+
+
+# 按目录结构指定，目录下按切分存放对应的 parquet 文件
+dataset = load_dataset("parquet", data_dir="path/to/your/directory")
+```
 
 
 
